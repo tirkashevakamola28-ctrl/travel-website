@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mening Portfolio Saytim</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* Maxsus uslublar */
+    body {
+      padding-top: 56px; /* Navbar balandligi uchun */
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0,0,0,0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    footer {
+      background-color: #222;
+      color: #ddd;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #ddd;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Travel menu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#hero">Header</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header (Hero) -->
+<header id="hero" class="hero">
+  <div class="container hero-content">
+    <h1 class="display-4 fw-bold">Salom! Sayohatga tayyormisz?</h1>
+    <p class="lead">Bizning kompaniya orqali hohlagan davlatingizga sayohat qilishingiz mumkin!</p>
+    <a href="#portfolio" class="btn btn-lg btn-outline-light mt-3">Biz haqimizda</a>
+  </div>
+</header>
+
+<!-- About Me -->
+<section id="about" class="container my-5">
+  <h2 class="mb-4 text-center">Companiya haqida qisqacha</h2>
+  <div class="card shadow">
+    <div class="row g-0 align-items-center">
+      <div class="col-md-4">
+        <img src="img/company.jpg" class="img-fluid rounded-start" alt="Kamola" />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">TTK</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae molestiae magni cupiditate a modi nesciunt neque accusantium provident dolores possimus.</p>
+          <p class="card-text"><small class="text-muted">Ochilganiga:12 yil bo'ldi</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="container my-5">
+  <h2 class="mb-4 text-center">Odamlar foydalangan</h2>
+  <div class="mb-3">
+    <label class="form-label fw-bold">Xaridorlaning yoqqanligi</label>
+    <div class="progress">
+      <div class="progress-bar bg-success" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+        aria-valuemax="100">95%</div>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label fw-bold">Shahar aholisi foydalanadi</label>
+    <div class="progress">
+      <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+        aria-valuemax="100">90%</div>
+    </div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label fw-bold">Doimiy mijozlar foizi</label>
+    <div class="progress">
+      <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+        aria-valuemax="100">80%</div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio" class="container my-5">
+  <h2 class="mb-4 text-center">Portfolio</h2>
+  <div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="img/OIP.webp" class="card-img-top" alt="Ish 1" />
+        <div class="card-body">
+          <h5 class="card-title">Hajga sayohat qiling</h5>
+          <p class="card-text">Ota-onangizni umraga olib boring!</p>
+        </div>
+        
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="img/New york.webp" class="card-img-top" alt="Ish 2" />
+        <div class="card-body">
+          <h5 class="card-title">New Yorkga marhamat</h5>
+          <p class="card-text">Dunyoning eng gozal maskanlaridan bahramand bo'ling.</p>
+        </div>
+       
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow">
+        <img src="img/dubay.webp" class="card-img-top" alt="Ish 3" />
+        <div class="card-body">
+          <h5 class="card-title">Oilaviy hordiq chiqarish uchun dubayga marhamat!</h5>
+          <p class="card-text">Siz bunga loyiq siz!</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="container my-5">
+  <h2 class="mb-4 text-center">Aloqa</h2>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Ismingiz</label>
+      <input type="text" class="form-control" id="name" placeholder="Ismingizni kiriting" required />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email manzilingiz</label>
+      <input type="email" class="form-control" id="email" placeholder="Email kiriting" required />
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Xabaringiz</label>
+      <textarea class="form-control" id="message" rows="4" placeholder="Xabar qoldiring" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Yuborish</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>Email: <a href="mailto:kamola@example.com">kamola@example.com</a> | Telefon: <a href="tel:+998901234567">+998 90 255 89 44</a></p>
+    <p>
+      <a href="#" class="me-3"><i class="bi bi-facebook"></i> Facebook</a>
+      <a href="#" class="me-3"><i class="bi bi-instagram"></i> Instagram</a>
+      <a href="#"><i class="bi bi-twitter"></i> Twitter</a>
+    </p>
+    <small>&copy; 2025 Kamola. Barcha huquqlar himoyalangan.</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>
